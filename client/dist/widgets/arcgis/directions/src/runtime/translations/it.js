@@ -1,0 +1,1 @@
+System.register([],(function(i){return{execute:function(){i({_widgetLabel:"Indicazioni",_action_DirectionsFrom_label:"Indicazioni da",_action_DirectionsTo_label:"Indicazioni per",outOfCredit:"Impossibile caricare il servizio di routing. La causa potrebbe essere l'inaccessibilità del servizio."})}}}));

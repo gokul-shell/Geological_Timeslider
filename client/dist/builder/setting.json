@@ -1,0 +1,9 @@
+{
+  "devEnv": {
+    "prod": {
+      "portalUrl": "https://shell.maps.arcgis.com",
+      "clientId": "aqqyLIjnNoqu7H3J",
+      "isWebTier": false
+    }
+  }
+}

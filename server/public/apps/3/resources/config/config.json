@@ -1,0 +1,56 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {},
+      "order": []
+    }
+  },
+  "exbVersion": "1.13.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {},
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://shell.maps.arcgis.com"
+  },
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#fbce07",
+      "color": "#404040"
+    },
+    "body": {
+      "bg": "#fbce07",
+      "color": "#404040",
+      "link": "#404040"
+    },
+    "button": {
+      "bg": "#ffffff",
+      "color": "#404040"
+    },
+    "logo": {
+      "small": "https://shell.maps.arcgis.com/sharing/rest/content/items/9acedf14f25d471caacf308b7dee09b8/data",
+      "link": "https://shell.maps.arcgis.com/home/"
+    }
+  }
+}

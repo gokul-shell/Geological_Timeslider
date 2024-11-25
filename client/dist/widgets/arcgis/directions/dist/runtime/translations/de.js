@@ -1,0 +1,1 @@
+System.register([],(function(e){return{execute:function(){e({_widgetLabel:"Wegbeschreibung",_action_DirectionsFrom_label:"Wegbeschreibung von",_action_DirectionsTo_label:"Wegbeschreibung nach",outOfCredit:"Der Routen-Service kann nicht geladen werden. Der Grund hierfür kann sein, dass auf den Service nicht zugegriffen werden kann."})}}}));

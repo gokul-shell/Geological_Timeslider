@@ -1,0 +1,32 @@
+
+
+.vertical-slider {
+  position: relative;
+  width: 20px; /* Set width as needed */
+  height: 541px; /* Set height as needed */
+  background-color: #ddd;
+ 
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 20px; /* Set thumb height as needed */
+  background-color: #ddd;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px; /* Set line-height same as height for vertical centering */
+}
+
+.track {
+  position: absolute;
+  width: 100%;
+  height: 541px;
+  background-color: #de1d22;
+}
+
+.esri-layer-list {
+  right: 10%;
+}

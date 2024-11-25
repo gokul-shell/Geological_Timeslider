@@ -1,0 +1,24 @@
+{
+  "1727111391491.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1727111391491.png",
+    "properties": {
+      "filename": "1727111391491.png",
+      "originalName": "app-logo1.png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1727111391491.png",
+      "color": "var(--dark-800)",
+      "size": 16,
+      "inlineSvg": false,
+      "isUploaded": true
+    }
+  },
+  "1727111414064.jpg": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1727111414064.jpg",
+    "properties": {
+      "filename": "1727111414064.jpg",
+      "originalName": "shell.jpg",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1727111414064.jpg",
+      "isUploaded": true,
+      "inlineSvg": false
+    }
+  }
+}

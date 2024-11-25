@@ -1,0 +1,9 @@
+{"url":[
+    {"DHA_Rosettes":"https://mapserver1.europe.shell.com/arcgis/rest/services/Global/DrilledHoleAnalysis_Shell/MapServer/2"},
+    {"GDE_Interpretations":""},
+    {"Prospects_BPA2":"https://sww-bpa2.siep.shell.com/Spatial/rest/services/BPA2Prospect/BPA2_Prospect_Global_Prospect_Segment_Parameters_V2/FeatureServer/0"},
+    {"GDEI_Extents":"https://mapserver1.europe.shell.com/arcgis/rest/services/Global/GDE_Project_Extents___Shell_Global_Collection/MapServer"},
+    {"Drilled_Hole_Analysis":"https://mapserver1.europe.shell.com/arcgis/rest/services/Global/DrilledHoleAnalysis_Shell/MapServer/2"}
+ ]}    
+ 
+ 

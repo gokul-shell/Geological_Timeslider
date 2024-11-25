@@ -1,0 +1,1 @@
+System.register([],(function(i){return{execute:function(){i({_widgetLabel:"Navigačné inštrukcie",_action_DirectionsFrom_label:"Navigovať z",_action_DirectionsTo_label:"Navigovať do",outOfCredit:"Nie je možné načítať trasovaciu službu. Môže to byť kvôli nedostupnosti služby."})}}}));

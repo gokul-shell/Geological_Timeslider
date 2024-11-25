@@ -1,0 +1,15 @@
+{
+  "name": "dashboard",
+  "type": "template",
+  "templateType": "scrolling-page",
+  "label": "Dashboard",
+  "description": "Dashboard is a template designed to display key metrics using charts, maps, cards, and text widgets.",
+  "thumbnail": "thumbnail.png",
+  "order": 10,
+  "tags": [
+    "Dashboard",
+    "Scrolling"
+  ],
+  "thumbnailWidth": 320,
+  "thumbnailHeight": 214
+}

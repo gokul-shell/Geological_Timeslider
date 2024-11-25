@@ -1,0 +1,548 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "50.2%",
+            "right": "41.9%",
+            "top": "84.5%",
+            "bottom": "9.8%",
+            "width": "8.0%",
+            "height": "5.8%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {}
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "width": "380.4347826086956%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "CUSTOM",
+              "height": "AUTO"
+            }
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0",
+        "1"
+      ]
+    }
+  },
+  "exbVersion": "1.13.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.13.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": false,
+          "canNavigation": true,
+          "canLayers": true,
+          "canMeasure": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_3",
+        "initialMapState": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
+        },
+        {
+          "dataSourceId": "dataSource_3",
+          "mainDataSourceId": "dataSource_3"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/common/controller/",
+      "version": "1.13.0",
+      "label": "Widget Controller",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_2",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_2"
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/common/search/",
+      "version": "1.13.0",
+      "label": "Search",
+      "config": {
+        "searchResultView": "Result_Panel",
+        "arrangementStyle": "Style2",
+        "searchResultStyle": "Compact",
+        "maxSuggestions": 6,
+        "recentSearchesMaxNumber": 6,
+        "resultMaxNumber": 6,
+        "enableFiltering": true,
+        "datasourceConfig": [
+          {
+            "configId": "config_0",
+            "icon": null,
+            "label": "GMAS Active Vessels Live, by Ship Type (My Maps IoT)",
+            "displayLabel": true,
+            "useDataSource": {
+              "dataSourceId": "dataSource_2-global_marine_assets_gmas_shell_view_3784",
+              "mainDataSourceId": "dataSource_2-global_marine_assets_gmas_shell_view_3784",
+              "rootDataSourceId": "dataSource_2",
+              "fields": [
+                "ASSESSOR_NAME",
+                "MMSI",
+                "IMO",
+                "Name"
+              ]
+            },
+            "displayFields": [
+              {
+                "jimuName": "ASSESSOR_NAME",
+                "name": "ASSESSOR_NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "ASSESSOR_NAME",
+                "format": null
+              },
+              {
+                "jimuName": "Name",
+                "name": "Name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Name",
+                "format": null
+              },
+              {
+                "jimuName": "MMSI",
+                "name": "MMSI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MMSI",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "IMO",
+                "name": "IMO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "IMO",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              }
+            ],
+            "searchFields": [
+              {
+                "jimuName": "ASSESSOR_NAME",
+                "name": "ASSESSOR_NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "ASSESSOR_NAME",
+                "format": null
+              },
+              {
+                "jimuName": "MMSI",
+                "name": "MMSI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MMSI",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "IMO",
+                "name": "IMO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "IMO",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "Name",
+                "name": "Name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Name",
+                "format": null
+              }
+            ],
+            "hint": "MMSI or IMO ",
+            "searchServiceType": "FeatureService"
+          },
+          {
+            "configId": "config_1",
+            "icon": null,
+            "label": "global_marine_assets_primary_spglobal",
+            "displayLabel": true,
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-0",
+              "mainDataSourceId": "dataSource_1-0",
+              "rootDataSourceId": "dataSource_1",
+              "fields": [
+                "ASSESSOR_NAME",
+                "MMSI",
+                "IMO",
+                "Name"
+              ]
+            },
+            "displayFields": [
+              {
+                "jimuName": "Name",
+                "name": "Name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Name",
+                "format": null
+              },
+              {
+                "jimuName": "ASSESSOR_NAME",
+                "name": "ASSESSOR_NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "ASSESSOR_NAME",
+                "format": null
+              },
+              {
+                "jimuName": "MMSI",
+                "name": "MMSI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MMSI",
+                "format": null
+              },
+              {
+                "jimuName": "IMO",
+                "name": "IMO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "IMO",
+                "format": null
+              }
+            ],
+            "searchFields": [
+              {
+                "jimuName": "ASSESSOR_NAME",
+                "name": "ASSESSOR_NAME",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "ASSESSOR_NAME",
+                "format": null
+              },
+              {
+                "jimuName": "MMSI",
+                "name": "MMSI",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "MMSI",
+                "format": null
+              },
+              {
+                "jimuName": "IMO",
+                "name": "IMO",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "IMO",
+                "format": null
+              },
+              {
+                "jimuName": "Name",
+                "name": "Name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Name",
+                "format": null
+              }
+            ],
+            "hint": "MMSI",
+            "searchServiceType": "FeatureService"
+          }
+        ],
+        "hint": "MMSI or IMO"
+      },
+      "id": "widget_3",
+      "outputDataSources": [],
+      "useUtilities": [],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-global_marine_assets_gmas_shell_view_3784",
+          "mainDataSourceId": "dataSource_2-global_marine_assets_gmas_shell_view_3784",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "ASSESSOR_NAME",
+            "MMSI",
+            "IMO",
+            "Name"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-0",
+          "mainDataSourceId": "dataSource_1-0",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "ASSESSOR_NAME",
+            "MMSI",
+            "IMO",
+            "Name"
+          ]
+        }
+      ]
+    },
+    "widget_4": {
+      "uri": "widgets/common/filter/",
+      "version": "1.13.0",
+      "label": "Filter",
+      "config": {
+        "groupByLayer": false,
+        "logicalOperator": "OR",
+        "custom": false,
+        "resetAll": false,
+        "turnOffAll": false,
+        "arrangeType": "BLOCK",
+        "triggerType": "TOGGLE",
+        "omitInternalStyle": false,
+        "filterItems": [
+          {
+            "icon": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15 1.53V0H1v1.53h.07l5.374 5.288v6.121l2.26 2.224a.5.5 0 0 0 .852-.356V6.825l5.382-5.295H15ZM2 1h12v.049L8.556 6.406l-.001 7.207-1.111-1.093V6.399L2 1.042V1Z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "color": "",
+                "filename": "Filter",
+                "originalName": "filter.svg",
+                "inlineSvg": true,
+                "size": 14
+              }
+            },
+            "name": "GMAS Vessels Live, by Ship Type (My Maps IoT)",
+            "useDataSource": {
+              "dataSourceId": "dataSource_3-global_marine_assets_gmas_shell_view_6194",
+              "mainDataSourceId": "dataSource_3-global_marine_assets_gmas_shell_view_6194",
+              "rootDataSourceId": "dataSource_3",
+              "fields": [
+                "MMSI"
+              ]
+            },
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "MMSI",
+                  "operator": "NUMBER_OPERATOR_IS",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "USER_INPUT",
+                    "inputEditor": "TEXT_BOX",
+                    "value": null
+                  },
+                  "displayType": "USE_ASK_FOR_VALUE",
+                  "askForValueOptions": {
+                    "label": null,
+                    "display": "BLOCK",
+                    "hint": "352002764",
+                    "cascade": null
+                  },
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "",
+              "displaySQL": "(MMSI = ?)"
+            },
+            "autoApplyWhenWidgetOpen": false,
+            "collapseFilterExprs": false
+          }
+        ]
+      },
+      "id": "widget_4",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3-global_marine_assets_gmas_shell_view_6194",
+          "mainDataSourceId": "dataSource_3-global_marine_assets_gmas_shell_view_6194",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "MMSI"
+          ]
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "MAP_SERVICE",
+      "url": "https://us2-iot.arcgis.com/cthxjrhcagelosqx/cthxjrhcagelosqx/maps/arcgis/rest/services/global_marine_assets_primary_spglobal/MapServer",
+      "sourceLabel": "global_marine_assets_primary_spglobal"
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "ship live velocity",
+      "itemId": "c86cd449de13406fb6bd201483a97769",
+      "portalUrl": "https://shell.maps.arcgis.com"
+    },
+    "dataSource_3": {
+      "id": "dataSource_3",
+      "type": "WEB_MAP",
+      "sourceLabel": "gmas velocity",
+      "itemId": "81873c37e4ac4444bc398cbe0b63f175",
+      "portalUrl": "https://shell.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://shell.maps.arcgis.com"
+  },
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#ffffff",
+      "color": "#404040"
+    },
+    "body": {
+      "bg": "#ff0000",
+      "color": "#404040",
+      "link": "#404040"
+    },
+    "button": {
+      "bg": "#ffd300",
+      "color": "#404040"
+    },
+    "logo": {
+      "small": "https://shell.maps.arcgis.com/sharing/rest/content/items/9acedf14f25d471caacf308b7dee09b8/data",
+      "link": "https://shell.maps.arcgis.com/home/"
+    }
+  },
+  "originExbVersion": "1.13.0",
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "timestamp": 1711087933673
+}

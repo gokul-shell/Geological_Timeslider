@@ -1,0 +1,1 @@
+System.register([],(function(e){return{execute:function(){e({_widgetLabel:"Norādes",_action_DirectionsFrom_label:"Norādes no",_action_DirectionsTo_label:"Norādes uz",outOfCredit:"Nevarēja ielādēt maršruta servisu. Iespējams, tas ir tādēļ, ka nevar piekļūt servisam."})}}}));

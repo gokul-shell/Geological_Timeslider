@@ -1,0 +1,1 @@
+System.register([],(function(t){return{execute:function(){t({_widgetLabel:"Reitti",_action_DirectionsFrom_label:"Reittiohjeet määränpäästä",_action_DirectionsTo_label:"Reittiohjeet määränpäähän",outOfCredit:"Reittipalvelua ei voi ladata. Tämä voi johtua siitä, että palvelu ei ole käytettävissä."})}}}));

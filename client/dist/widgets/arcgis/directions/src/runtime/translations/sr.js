@@ -1,0 +1,1 @@
+System.register([],(function(e){return{execute:function(){e({_widgetLabel:"Uputstva za navigaciju",_action_DirectionsFrom_label:"Smernice od",_action_DirectionsTo_label:"Smernice do",outOfCredit:"Učitavanje servisa rute nije moguće. Ovo može da bude posledica toga što servis nije dostupan."})}}}));

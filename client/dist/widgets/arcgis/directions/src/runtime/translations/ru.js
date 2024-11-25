@@ -1,0 +1,1 @@
+System.register([],(function(e){return{execute:function(){e({_widgetLabel:"Путевой лист",_action_DirectionsFrom_label:"Маршрут от",_action_DirectionsTo_label:"Маршрут к",outOfCredit:"Невозможно загрузить сервис маршрутов. Это может быть связано с недоступностью сервиса."})}}}));

@@ -1,0 +1,1 @@
+System.register([],(function(e){return{execute:function(){e({_widgetLabel:"Vejledninger",_action_DirectionsFrom_label:"Kørselsvejledning fra",_action_DirectionsTo_label:"Kørselsvejledning til",outOfCredit:"Kan ikke indlæse rutetjeneste. Dette kan skyldes, at tjenesten ikke er tilgængelig."})}}}));
